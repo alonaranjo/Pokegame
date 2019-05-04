@@ -4,32 +4,32 @@ of the awesome course [The Modern React Bootcamp (Hooks, Context, Router & More)
 The architecture of components for the app is:
 <pre>
 App <br />
-    |--Pokegame <br />
-              |--Pokedex <br />
-                       |--Pokecard <br />
-                       |--Pokecard <br />
-                       |--Pokecard <br />
-                       |--Pokecard <br />
-               |--Pokedex <br />
-                       |--Pokecard <br />
-                       |--Pokecard <br />
-                       |--Pokecard <br />
-                       |--Pokecard <br />
+    |--Pokegame  <br />
+          |--Pokedex <br />
+               |--Pokecard <br />
+               |--Pokecard <br />
+               |--Pokecard <br />
+               |--Pokecard <br />
+           |--Pokedex <br />
+               |--Pokecard <br />
+               |--Pokecard <br />
+               |--Pokecard <br />
+               |--Pokecard <br />
                        
 Components:<br />
-## App: 
+## App 
     This component wrap the components of the app.<br />
-## Pokegame: 
+## Pokegame => (defaultProps and business logic)
     This component has an array with 8 pokemons, Each pokemon have a name, a pic, a speciality 
 and experience. 
  When the Pokegame begins pick up randomly 4 pokemons for each pokedex and add the experiences of 
  the 4 pokemon.
  The pokedex with a mayor experience is the winner. Lastly Pokegame assign the status (Winner or Looser) and
 the total experience for every pokedex.<br />
-## Pokedex: 
+## Pokedex => (Props, business logic and UI logic) 
     This component receive an array with 4 pokemons, the estatus (Winner or Looser) and the total 
 experience of the 4 pokemons. For every pokemon the component render a pokecard.<br />
-## Pokecard: 
+## Pokecard => (Props and UI logic)
     This component receive one pokemon and shows the data (name, pic, speciality and the experience).<br />
                    
 </pre>
