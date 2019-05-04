@@ -1,4 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and it is an exercise of the awesome course [The Modern React Bootcamp (Hooks, Context, Router & More)](https://www.udemy.com/modern-react-bootcamp/).
+
+The architecture of components for the app is:
+
+App
+    |--Pokegame
+              |--Pokedex
+                       |--Pokecard
+                       |--Pokecard
+                       |--Pokecard
+                       |--Pokecard
+               |--Pokedex
+                       |--Pokecard
+                       |--Pokecard
+                       |--Pokecard
+                       |--Pokecard
+                       
+Components:
+           ### App: This component wrap the components of the app.
+           ### Pokegame: This component has an array with 8 pokemons, Each pokemon have a name, a pic, a speciality and experience. 
+                         When the Pokegame begins pick up randomly 4 pokemons for each pokedex and add the experiences of the 4 pokemon.
+                         The pokedex with a mayor experience is the winner. Lastly Pokegame assign the status (Winner or Looser) and the total experience for every pokedex.
+           ### Pokedex: This component receive an array with 4 pokemons, the estatus (Winner or Looser) and the total experience of the 4 pokemons. For every pokemon the component render a pokecard.
+           ### Pokecard: This component receive one pokemon and shows the data (name, pic, speciality and the experience).
+                   
 
 ## Available Scripts
 
@@ -27,42 +51,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
